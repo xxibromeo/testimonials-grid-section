@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.container{
+    position: relative;
+    margin: 90px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.box{
+    display: inline-table;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 600px;
+    background-color: aquamarine;
+    border: 1px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dd{
+        left: 65%;
+        opacity: 0.5;
+        position: absolute;
+
+}
+.box1{
+    grid-column: 1/span 2;
+    grid-row: 1/1;
+    background-color: #733fc8;
+    color: white;
+}
+.box2{
+    grid-column: 3/3;
+    grid-row: 1/1;
+    background-color: #49556b;
+}
+.box3{
+    grid-column: 1/1;
+    grid-row: 2;
+    background-color: white;
+}
+.box4{
+    grid-column: 2/span 2;
+    grid-row: 2;
+    background-color:#18202d;
+    color: white;
+
+}
+.box5{
+    grid-column: 4/4;
+    grid-row: 1/span 2;
+    background-color: white;
+}
+.img{
+    display: flex;
+    object-fit: cover;
+}
+.img >h2>p{
+    font-size: 13px;
+    color: rgba(197, 199, 201, 0.589);
+    margin-top: 0;
+
+}
+.img>h2{
+    margin-top: 50px;
+
+}
+img{
+    margin-top: 30px;
+    display: flex;
+    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 60%;
+}
+
+.Daniel>img ,.Jonathan>img,.Jeanette>img{
+    border: 3px solid rgba(255, 255, 255, 0.623);
+}
+.Patrick>img{
+    border: 3px solid #733fc8;
+}
+
+.area{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -20px;
+}
+.Daniel{
+    position: relative;
+}
+.area >h2{
+    font-weight:bolder ;
+}
+@media only screen and (max-width:375px) {
+    body{
+        background-color: #49556b;
+    }
+    .box{
+        display: inline-table;
+    }
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .dd{
+        position: absolute;
+        top: 0;        
+        left: 50%;
+        opacity: 0.3;
+        display: inline-table;
+    }
+    .img{
+        margin: 0px;
+        height: 100px;
+    }
+    .area{
+        margin-top: 15%;
+    
+    }
+    .img>h2{
+        margin-top: 20%;
+        max-width: auto;
+    }
+    img{
+        object-fit: cover;
+    }
+   
+    
+}
