@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-size: 13px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 .container{
     position: relative;
@@ -15,8 +15,8 @@ body{
 }
 .box{
     display: inline-table;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 600px;
     background-color: aquamarine;
     border: 1px; 
@@ -39,6 +39,8 @@ body{
     grid-column: 3/3;
     grid-row: 1/1;
     background-color: #49556b;
+    color: white;
+
 }
 .box3{
     grid-column: 1/1;
@@ -61,15 +63,11 @@ body{
     display: flex;
     object-fit: cover;
 }
-.img >h2>p{
-    font-size: 13px;
-    color: rgba(197, 199, 201, 0.589);
-    margin-top: 0;
-
-}
-.img>h2{
-    margin-top: 50px;
-
+.img>p{
+    display: inline-table;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 95px;
 }
 img{
     margin-top: 30px;
@@ -82,6 +80,7 @@ img{
 
 .Daniel>img ,.Jonathan>img,.Jeanette>img{
     border: 3px solid rgba(255, 255, 255, 0.623);
+    margin-left: 3px;
 }
 .Patrick>img{
     border: 3px solid #733fc8;
@@ -95,8 +94,26 @@ img{
 .Daniel{
     position: relative;
 }
-.area >h2{
-    font-weight:bolder ;
+
+.content>h2{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: lighter;
+}
+.text{
+    margin-top: 5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.text>h2{
+    font-size: 16px;
+}
+.jona,.jean,.kira{
+    border: 1px solid;
+    margin-top: 12%;
 }
 @media only screen and (max-width:375px) {
     body{
@@ -135,6 +152,26 @@ img{
     img{
         object-fit: cover;
     }
-   
-    
+    .Daniel>h2,.Patrick>h2{
+        display: inline-table;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin-top: 40px;
+        margin-left: -3px;
+    }
+    .Kira>h2{
+        display: inline-table;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin-top: 40px;
+        margin-left: 5px;
+        border: 1px solid;
+    }
+    .Jonathan>p,.Jeanette>p{
+        display: inline-table;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin-top: 90px;
+        margin-left: 100px;
+    }
+    .Kira>p,.Patrick>p,.Daniel>p{
+        margin-top: 90px;
+    }
 }
