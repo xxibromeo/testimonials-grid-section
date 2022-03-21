@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    position: relative;
+    margin: 90px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.box{
+    display: inline-table;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 600px;
+    background-color: aquamarine;
+    border: 1px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dd{
+        left: 65%;
+        opacity: 0.5;
+        position: absolute;
+
+}
+.box1{
+    grid-column: 1/span 2;
+    grid-row: 1/1;
+    background-color: #733fc8;
+    color: white;
+}
+.box2{
+    grid-column: 3/3;
+    grid-row: 1/1;
+    background-color: #49556b;
+    color: white;
+
+}
+.box3{
+    grid-column: 1/1;
+    grid-row: 2;
+    background-color: white;
+}
+.box4{
+    grid-column: 2/span 2;
+    grid-row: 2;
+    background-color:#18202d;
+    color: white;
+
+}
+.box5{
+    grid-column: 4/4;
+    grid-row: 1/span 2;
+    background-color: white;
+}
+.img{
+    display: flex;
+    object-fit: cover;
+}
+.img>p{
+    display: inline-table;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 95px;
+}
+img{
+    margin-top: 30px;
+    display: flex;
+    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 60%;
+}
+
+.Daniel>img ,.Jonathan>img,.Jeanette>img{
+    border: 3px solid rgba(255, 255, 255, 0.623);
+    margin-left: 3px;
+}
+.Patrick>img{
+    border: 3px solid #733fc8;
+}
+
+.area{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -20px;
+}
+.Daniel{
+    position: relative;
+}
+
+.content>h2{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: lighter;
+}
+.text{
+    margin-top: 5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.text>h2{
+    font-size: 16px;
+}
+.jona,.jean,.kira{
+    border: 1px solid;
+    margin-top: 12%;
+}
+@media only screen and (max-width:375px) {
+    body{
+        background-color: #49556b;
+    }
+    .box{
+        display: inline-table;
+    }
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .dd{
+        position: absolute;
+        top: 0;        
+        left: 50%;
+        opacity: 0.3;
+        display: inline-table;
+    }
+    .img{
+        margin: 0px;
+        height: 100px;
+    }
+    .area{
+        margin-top: 15%;
+    
+    }
+    .img>h2{
+        margin-top: 20%;
+        max-width: auto;
+    }
+    img{
+        object-fit: cover;
+    }
+    .Daniel>h2,.Patrick>h2{
+        display: inline-table;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin-top: 40px;
+        margin-left: -3px;
+    }
+    .Kira>h2{
+        display: inline-table;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin-top: 40px;
+        margin-left: 5px;
+        border: 1px solid;
+    }
+    .Jonathan>p,.Jeanette>p{
+        display: inline-table;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin-top: 90px;
+        margin-left: 100px;
+    }
+    .Kira>p,.Patrick>p,.Daniel>p{
+        margin-top: 90px;
+    }
+}
